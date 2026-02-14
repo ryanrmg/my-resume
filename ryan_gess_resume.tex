@@ -1,4 +1,4 @@
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,9pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -63,7 +63,7 @@
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
@@ -95,6 +95,12 @@
     \resumeSubheading
       {Raytheon}{Colorado Springs, CO}
       {Senior Software Engineer}{Jan 2026 - Present}
+      \resumeItemListStart
+        \item
+          Support transition of git repos to \textbf{Docker} containerization and troubleshoot issues that arise from environmental differences.
+        \item
+          Troubleshoot and fix failing unit tests in \verb!C++! and \textbf{Ada} radar code.
+      \resumeItemListEnd
     \resumeSubheading
       {Collins Aerospace}{Colorado Springs, CO}
       {Software Engineer II}{Jul 2023 - Dec 2025}
@@ -104,7 +110,7 @@
         \item
           Engineered a \textbf{persistent} and coherent storage for maintaining availability of data across many instances of a system.
         \item
-          Developed a tool to verify integrity of installed applications. Reduced troubleshooting time by indicating which files had been modified.
+          Developed a tool to verify \textbf{integrity} of installed applications. Reduced troubleshooting time by indicating which files had been modified.
         \item
           Led an investigation to determine risks of upgrading tech and develop solutions for identified risks.
       \resumeItemListEnd
@@ -114,11 +120,11 @@
       {Software Engineer Intern}{Jun 2022 - Aug 2022}
       \resumeItemListStart
         \item
-          Developed an automated testing application for verifying system requirements using Java on C2BMC National Team.
+          Developed an automated testing application for verifying system requirements using \textbf{Java} on C2BMC National Team.
         \item
           Implemented tests for new requirements and updated existing requirements to ensure version compatibility.
         \item
-          Planned and built new Java/Maven application for aggregating test results on web app to provide historical verification context.
+          Planned and built new \textbf{Java/Maven} application for aggregating test results on web app to provide historical verification context.
       \resumeItemListEnd
 
     \resumeSubheading
@@ -126,11 +132,11 @@
       {Software Engineer Intern}{Jun 2021 - Aug 2021}
       \resumeItemListStart
         \item
-          Investigated methods for optimizing a Yocto build for embedded Linux operating system.
+          Investigated methods for optimizing a \textbf{Yocto} build for embedded Linux operating system.
         \item
-          Implemented and enabled ccache within Yocto build and analyzed performance gain, achieved 1.2x speedup.
+          Implemented and enabled ccache within Yocto build and analyzed performance gain, achieved \textbf{1.2x} speedup.
         \item
-          Designed new build pipeline for running unit tests in parallel to increase productivity and pull request turnaround time, achieved 25\% speedup.
+          Designed new build pipeline for running unit tests in parallel to increase productivity and pull request turnaround time, achieved \textbf{25\%} speedup.
       \resumeItemListEnd
 
     \resumeSubheading
@@ -138,7 +144,7 @@
       {Full Stack Developer}{Jan 2020 - Jan 2021}
       \resumeItemListStart
         \item
-          Built and styled an analytics page for educators of online learning platform using \textbf{React}, D3.js.
+          Built and designed an analytics page for educators of online learning platform using \textbf{React}, \textbf{D3.js}.
         \item
           Integrated quantitative metrics to capture member engagement and community growth.
         \item
@@ -150,23 +156,20 @@
 %-----------PROJECTS-----------------
 \section{Projects \& Leadership}
   \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{Alpine Racing and Freestyle Team, Captain}
+    \resumeSubItem{XDash}
+      {Personalized real-time futures trading platform using \textbf{Go}, \textbf{React} and \textbf{ProjectX} API.}
+    \resumeSubItem{Alpine Racing and Freestyle Team, Team Captain}
       {Lead team practices and fitness activities. Coordinate with competition leaders to plan events.}
   \resumeSubHeadingListEnd
 
 %
 %--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
+\section{Skills}
  \resumeSubHeadingListStart
-   \item{
-     \textbf{Languages}{: C, Python, Ada, Javascript, C++, Go, Java}
-     \hfill
-     \textbf{Technologies}{: AWS, React, Kafka, Numpy, PyTorch}
-     \hfill
-     \textbf{Abilities}{: Data Analysis, Machine Learning, Binary Exploitation, Web Development}
-   }
+   \resumeSubItem{Languages}{: C/C++, Python, Go, Java, JavaScript, SQL, Ada}
+   \resumeSubItem{Tools/Frameworks}{: AWS, React, Numpy, PyTorch, gdb, Django, Spring, Maven}
+   \resumeSubItem{Abilities}{: Data Analysis, Machine Learning, Binary Exploitation, Web Development, Decision Making}
+   \resumeSubItem{Security Clearance}{Active DoD Secret}
  \resumeSubHeadingListEnd
 
 
