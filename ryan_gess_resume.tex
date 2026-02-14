@@ -1,0 +1,174 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingEducation}[6]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+    \textit{\small #5} & \textit{\small #6} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \Large Ryan Gess & Email : gess.rmg@gmail.com\\
+   medium.com/@gess.rmg & Mobile : +1-814-826-5808 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingEducation
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {Master of Science, Electrical and Computer Engineering; 3.4/4}{Jan. 2022 -- May. 2023}
+      {Bachelor of Science, Electrical and Computer Engineering; 3.3/4}{Aug. 2018 -- Dec. 2021}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Raytheon}{Colorado Springs, CO}
+      {Senior Software Engineer}{Jan 2026 - Present}
+    \resumeSubheading
+      {Collins Aerospace}{Colorado Springs, CO}
+      {Software Engineer II}{Jul 2023 - Dec 2025}
+      \resumeItemListStart
+        \item
+          Built features in \textbf{Java} for routing and interpreting sensor data originating on land and in space to support C2BMC National Team.
+        \item
+          Engineered a \textbf{persistent} and coherent storage for maintaining availability of data across many instances of a system.
+        \item
+          Developed a tool to verify integrity of installed applications. Reduced troubleshooting time by indicating which files had been modified.
+        \item
+          Led an investigation to determine risks of upgrading tech and develop solutions for identified risks.
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Collins Aerospace}{Colorado Springs, CO}
+      {Software Engineer Intern}{Jun 2022 - Aug 2022}
+      \resumeItemListStart
+        \item
+          Developed an automated testing application for verifying system requirements using Java on C2BMC National Team.
+        \item
+          Implemented tests for new requirements and updated existing requirements to ensure version compatibility.
+        \item
+          Planned and built new Java/Maven application for aggregating test results on web app to provide historical verification context.
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Microsoft}{Redmond, WA}
+      {Software Engineer Intern}{Jun 2021 - Aug 2021}
+      \resumeItemListStart
+        \item
+          Investigated methods for optimizing a Yocto build for embedded Linux operating system.
+        \item
+          Implemented and enabled ccache within Yocto build and analyzed performance gain, achieved 1.2x speedup.
+        \item
+          Designed new build pipeline for running unit tests in parallel to increase productivity and pull request turnaround time, achieved 25\% speedup.
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Parthean}{Pittsburgh, PA}
+      {Full Stack Developer}{Jan 2020 - Jan 2021}
+      \resumeItemListStart
+        \item
+          Built and styled an analytics page for educators of online learning platform using \textbf{React}, D3.js.
+        \item
+          Integrated quantitative metrics to capture member engagement and community growth.
+        \item
+          Restructured data model to allow extensibility and improve performance and efficiency.
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects \& Leadership}
+  \resumeSubHeadingListStart
+    \resumeSubItem{QuantSoftware Toolkit}
+      {Open source python library for financial data analysis and machine learning for finance.}
+    \resumeSubItem{Alpine Racing and Freestyle Team, Captain}
+      {Lead team practices and fitness activities. Coordinate with competition leaders to plan events.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: C, Python, Ada, Javascript, C++, Go, Java}
+     \hfill
+     \textbf{Technologies}{: AWS, React, Kafka, Numpy, PyTorch}
+     \hfill
+     \textbf{Abilities}{: Data Analysis, Machine Learning, Binary Exploitation, Web Development}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
